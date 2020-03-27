@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Enter the pin to continue</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<style>
+body{margin:40px;}
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+</style>
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form" method="post" action="sign.php">
+					<span class="login100-form-title">
+						Enter PIN
+					</span>
+					
+<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+
+					</div>
+					
+						<div class="wrap-input100" data-validate = "Pin is required">
+
+						<input class="input100" type="password" name="pin" placeholder="Pin" maxlength="4" minlenth="4" id=bbb required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+
+							
+						</span></div>
+
+						
+						
+					
+					<br>
+					Enter your color code :
+					<br>
+					<br>
+
+<button type="button"  id="shad" class="red" onclick="r()"></button>
+<button type="button"  id="shad" class="blue" onclick="b()"></button>
+<button type="button"  id="shad" class="green" onclick="g()"></button>
+<button type="button"  id="shad" class="yellow" onclick="y()"></button>
+<button type="button"  id="shad" class="black" onclick="bl()"></button>
+<button type="button"  id="shad" class="white" onclick="w()"></button>
+<button type="button"  id="shad" class="violet" onclick="v()"></button>
+<button type="button"  id="shad" class="pink" onclick="p()"></button><script type="text/javascript">
+                    function r() 
+                    {
+                        document.getElementById('bbb').value +=1;
+                    }
+                    function b() 
+                    {
+                        document.getElementById('bbb').value +=2;
+                    }
+                    function g() 
+                    {
+                        document.getElementById('bbb').value +=3;
+                    }
+                    function y() 
+                    {
+                        document.getElementById('bbb').value +=4;
+                    }
+                    function w() 
+                    {
+                        document.getElementById('bbb').value +=5;
+                    }
+                    function bl() 
+                    {
+                        document.getElementById('bbb').value +=6;
+                    }
+                    function p() 
+                    {
+                        document.getElementById('bbb').value +=7;
+                    }
+                    function v() 
+                    {
+                        document.getElementById('bbb').value +=8;
+                    }
+                    
+        </script>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Sign Up
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+					</div>
+
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="login.html">
+							Login to your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				
+
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>

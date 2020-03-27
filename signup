@@ -1,0 +1,27 @@
+
+<?php
+$uname=$_POST['uname'];
+$email=$_POST['email'];
+$pass=$_POST['pass'];
+$host="localhost";
+$db="pranav";
+$username="root";
+$password="";
+$connect=mysqli_connect($host,$username,$password,$db);
+if(!$connect)
+{
+    die("<h1>connection Failed : ".mysqli_connect_error()."</h1>");
+}
+else
+{
+    $sql="INSERT INTO user VALUES('$uname','$email','$pass')";
+    if($connect->query($sql)===TRUE)
+    {
+	   echo"<h1>Welcome</h1>";
+    }
+    else
+    {
+	   echo"<h1>Unable to Connect</h1>";
+    }
+}
+?>
